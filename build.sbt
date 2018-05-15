@@ -719,3 +719,31 @@ val scalaMappings = Seq(
   ("org.scalanlp", "breeze", "http://www.scalanlp.org/api/breeze"),
   ("org.scalatest", "scalatest", "http://doc.scalatest.org/3.0.0"))
 val docMappings = javaMappings ++ scalaMappings
+
+lazy val docSettings = Seq(
+  micrositeName := "scio",
+  micrositeDescription := "Scio, a Scala API for Apache Beam and Google Cloud Dataflow inspired by Apache Spark and Scalding.",
+  micrositeHighlightTheme := "atom-one-light",
+  micrositeHomepage := "https://regadas.github.io/scio/",
+  micrositeBaseUrl := "scio",
+  micrositeDocumentationUrl := "docs",
+  micrositeGithubOwner := "regadas",
+  micrositeGithubRepo := "scio",
+  micrositePalette := Map(
+    "brand-primary" -> "#5B5988",
+    "brand-secondary" -> "#292E53",
+    "brand-tertiary" -> "#222749",
+    "gray-dark" -> "#49494B",
+    "gray" -> "#7B7B7E",
+    "gray-light" -> "#E5E5E6",
+    "gray-lighter" -> "#F4F3F4",
+    "white-color" -> "#FFFFFF"
+  ),
+  ghpagesNoJekyll := true,
+  includeFilter in makeSite := "*.html" | "*.css" | "*.png" | "*.jpg" | "*.gif" | "*.svg" | "*.js" | "*.swf" | "*.yml" | "*.md"
+)
+
+lazy val docs = Project("docs", file("docs"))
+  .settings(noPublishSettings)
+  .settings(docSettings)
+  .enablePlugins(MicrositesPlugin)

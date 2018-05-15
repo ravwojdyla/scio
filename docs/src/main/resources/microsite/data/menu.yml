@@ -1,0 +1,50 @@
+options:
+
+  - title: Getting Started
+    url: docs/index.html
+
+  - title: REPL
+    url: docs/Scio-REPL.html
+
+  - title: Scio, Beam and Dataflow
+    url: docs/Scio,-Beam-and-Dataflow.html
+
+  - title: Scio, Scalding and Spark
+    url: docs/Scio,-Scalding-and-Spark.html
+
+  - title: Apache Beam
+    url: docs/Apache-Beam.html
+
+  - title: Runners
+    url: docs/Runners.html
+
+  - title: Scio data guideline
+    url: docs/Scio-data-guideline.html
+
+  - title: FAQ
+    url: docs/FAQ.html
+
+  - title: Powered By
+    url: docs/Powered-By.html
+
+  - title: IO
+    url: docs/HDFS.html
+
+    nested_options:
+    - title: HDFS
+      url: docs/HDFS.html
+    - title: Avro
+      url: docs/Avro.html
+    - title: Bigtable
+      url: docs/Bigtable.html
+    - title: Protobuf
+      url: docs/Protobuf.html
+    - title: Parquet
+      url: docs/Parquet.html
+
+  - title: Extras
+    url: docs/Algebird.html
+
+    nested_options:
+    - title: Algebird
+      url: docs/Algebird.html

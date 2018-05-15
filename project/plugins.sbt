@@ -14,3 +14,5 @@ addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "0.2.0")
 libraryDependencies ++= Seq(
   "com.github.os72" % "protoc-jar" % "3.3.0.1"
 )
+
+addSbtPlugin("com.47deg"  % "sbt-microsites" % "0.7.18")
